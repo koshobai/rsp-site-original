@@ -1,0 +1,18 @@
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+
+label .cluster {
+  --gutter: var(--space-2xs);
+}
+
+[disabled] {
+  color: var(--gray-5);
+}
+
+.field-error {
+  color: var(--red-6);
+  font-size: var(--size-step-00);
+}

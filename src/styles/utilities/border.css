@@ -1,0 +1,19 @@
+.radius-2 {
+  border-radius: var(--radius-2);
+}
+
+.round {
+  border-radius: var(--radius-round);
+}
+
+.border-none {
+  border: none;
+}
+
+.divide {
+  border-top: 1px solid var(--color-border);
+}
+
+.divided > * + * {
+  border-block-start: 1px solid var(--gray-1);
+}

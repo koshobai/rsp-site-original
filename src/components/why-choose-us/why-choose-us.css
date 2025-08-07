@@ -1,0 +1,17 @@
+h2,
+span {
+  color: var(--color-primary);
+}
+.list {
+  display: grid;
+  gap: var(--space-m-l);
+  padding-block-start: var(--space-m-l);
+
+  @media (min-width: 640px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+h2 {
+  text-align: center;
+}

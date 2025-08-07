@@ -1,0 +1,26 @@
+h1 {
+  font-size: var(--font-size-7);
+}
+
+h1,
+h2,
+.label {
+  color: var(--color-primary);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--gray-7);
+  display: inline-block;
+}
+
+a {
+  color: currentColor;
+}

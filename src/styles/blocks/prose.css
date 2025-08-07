@@ -1,0 +1,5 @@
+.prose {
+  max-inline-size: var(--measure, 65ch);
+  --flow-space: var(--space-m);
+}
+

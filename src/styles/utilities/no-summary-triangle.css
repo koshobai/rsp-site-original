@@ -1,0 +1,7 @@
+.no-triangle::-webkit-details-marker {
+  display: none;
+}
+
+.no-triangle::-webkit-details-marker::-webkit-details-marker {
+  list-style-type: none;
+}

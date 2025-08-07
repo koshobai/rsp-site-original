@@ -1,0 +1,73 @@
+/* 
+  Global styles 
+
+  Low-specificity, global styles that apply to the whole 
+  project: https://cube.fyi/css.html
+*/
+
+@import "open-props/style";
+@import "open-props/colors-hsl";
+
+html {
+  scroll-behavior: smooth;
+}
+
+html[lang="ja"] {
+  font-size: 90%;
+}
+
+body {
+  background: var(--color-light);
+  color: var(--color-dark);
+  font-size: var(--size-step-0);
+  font-family: var(--font-base);
+  line-height: var(--leading-standard);
+  margin: 0;
+  min-block-size: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body:has(dialog[open]) {
+  overflow: hidden;
+  scrollbar-gutter: stable;
+}
+
+main {
+  flex: 1;
+}
+
+li {
+  list-indent: 0;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+input,
+textarea {
+  border: 1px solid var(--gray-3);
+  border-radius: var(--radius-2);
+  padding: var(--space-2xs);
+}
+
+select {
+  border: 1px solid var(--gray-3);
+  border-radius: var(--radius-2);
+  padding: var(--space-2xs);
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+[hidden] {
+  display: none !important;
+}

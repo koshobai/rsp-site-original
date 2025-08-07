@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  align-items: start;
+  gap: var(--space-2xs);
+  color: var(--color-primary);
+}
+
+.choose-icon {
+  display: flex;
+  inline-size: min-content;
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  padding: var(--space-3xs);
+  border-radius: 4px;
+}

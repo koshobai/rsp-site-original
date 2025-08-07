@@ -1,0 +1,17 @@
+.who-container {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+}
+
+.hero-img {
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: var(--ratio-landscape);
+  object-fit: cover;
+}
+
+@media (max-width: 70rem) {
+  .hero-heading {
+    margin-block-start: 0;
+  }
+}

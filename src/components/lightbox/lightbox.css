@@ -1,0 +1,45 @@
+dialog {
+  border: none;
+  padding: 0;
+  overflow: hidden;
+}
+
+dialog::backdrop {
+  background-color: hsl(var(--gray-9-hsl) / 90%);
+  backdrop-filter: blur(4px);
+}
+
+.button[data-function] {
+  color: var(--color-light);
+  height: 36px;
+  width: 36px;
+  position: fixed;
+  border-radius: var(--radius-round);
+  cursor: pointer;
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.button[data-function="dismiss"] {
+  inset-block-start: 1.25rem;
+  inset-inline-end: 1.25rem;
+}
+
+.button[data-function="prev"] {
+  inset-inline-start: 1.25rem;
+  inset-block-start: 50%;
+  translate: 0 -50%;
+  rotate: 0.5turn;
+}
+
+.button[data-function="next"] {
+  inset-inline-end: 1.25rem;
+  inset-block-start: 50%;
+  translate: 0 -50%;
+}
+
+img {
+  max-width: 90vw;
+  max-height: 90vh;
+}

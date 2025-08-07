@@ -1,0 +1,40 @@
+h1 {
+  color: var(--color-primary);
+}
+
+section {
+  padding-block: var(--space-xl-2xl);
+}
+
+ul {
+  --flow-space: var(--space-xl-2xl);
+}
+
+li {
+  display: block;
+}
+
+img {
+  border-radius: var(--radius-2);
+  margin-inline: auto;
+}
+
+summary {
+  cursor: pointer;
+}
+
+summary + p {
+  margin-block-start: 0;
+  padding-inline-start: 1.35em;
+  padding-block-start: var(--space-3xs-2xs);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+details[open] .icon {
+  rotate: 90deg;
+}
+
+#buying-guide a {
+  color: white;
+}

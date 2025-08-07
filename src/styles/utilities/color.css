@@ -1,0 +1,27 @@
+.color\:dark {
+  color: var(--color-dark);
+}
+
+.color\:light {
+  color: var(--color-light);
+}
+
+.color\:primary {
+  color: var(--color-primary);
+}
+
+.color\:secondary {
+  color: var(--color-secondary);
+}
+
+.bg\:primary {
+  background-color: var(--color-primary);
+}
+
+.bg\:secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg\:gray-1 {
+  background-color: var(--gray-1);
+}

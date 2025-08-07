@@ -1,0 +1,13 @@
+.image-wrapper {
+  width: var(
+    --image-wrapper-width,
+    300px
+  ); /* Set the desired width of the wrapper */
+  position: relative; /* Required for absolute positioning */
+}
+
+.image-wrapper img {
+  width: 100%; /* Make the image fill the width of its container */
+  height: auto; /* Let the browser calculate the height to maintain aspect ratio */
+  display: block; /* Remove any extra white space below the image */
+}

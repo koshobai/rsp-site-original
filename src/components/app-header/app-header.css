@@ -1,0 +1,121 @@
+.app-header {
+  --color-shadow-solid: hsl(var(--gray-3-hsl) / 50%);
+  --shadow-solid: 0 1px 0 var(--color-shadow-solid);
+  padding: var(--space-2xs) var(--space-s);
+  background-color: var(--color-light);
+  position: sticky;
+  inset-block-start: 0;
+  z-index: var(--layer-important);
+  transition: box-shadow 150ms ease-in-out;
+  box-shadow: var(--shadow-solid);
+
+  &[data-scrolled] {
+    box-shadow: var(--shadow-2), var(--shadow-solid);
+  }
+}
+
+.app-header :global(a) {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color-primary);
+  display: flex;
+}
+
+.large-nav {
+  display: none;
+  @media (min-width: 1024px) {
+    display: flex;
+  }
+}
+
+.header-logo {
+  --header-size: var(--space-l-xl);
+  height: var(--header-size);
+  width: var(--header-size);
+}
+
+details {
+  display: flex;
+  position: relative;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary::-webkit-details-marker::-webkit-details-marker {
+  list-style-type: none;
+}
+
+details summary {
+  display: flex;
+  align-items: center;
+  gap: 0.125rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+svg.chevron {
+  transform: rotate(var(--rotation));
+  transition: transform 150ms ease-in-out;
+}
+
+@keyframes nav-appear {
+  from {
+    opacity: 0;
+    scale: 0.9;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+details[open] {
+  --rotation: 180deg;
+}
+
+details[open] ul {
+  transform-origin: top right;
+  animation: nav-appear 150ms forwards;
+}
+
+details ul {
+  position: absolute;
+  scale: 0.9;
+  opacity: 0;
+  inset-inline-end: 0;
+  z-index: 20;
+  margin-block: 0;
+  background-color: var(--color-light);
+  color: var(--color-primary);
+  border: 1px solid var(--gray-3);
+  box-shadow: var(--shadow-3);
+  border-radius: var(--radius-2);
+  inline-size: max-content;
+  display: grid;
+  list-style: none;
+  padding: 0;
+}
+
+details ul li {
+  &:hover {
+    background-color: var(--gray-1);
+  }
+}
+
+summary {
+  user-select: none;
+}
+
+:global(.sub-menu-link) {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: 700;
+  inline-size: 100%;
+  display: inline-flex;
+  padding-block: var(--space-xs);
+  padding-inline: var(--space-m);
+  user-select: none;
+}

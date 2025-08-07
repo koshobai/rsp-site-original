@@ -1,0 +1,22 @@
+.team-container {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-block-size: 40vh;
+  object-fit: contain;
+}
+
+h2 {
+  font-size: var(--size-step-3);
+  color: var(--color-primary);
+}
+
+.prose.flow {
+  margin-inline: auto;
+}
+
+a {
+  color: var(--color-primary);
+}

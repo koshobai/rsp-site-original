@@ -1,0 +1,15 @@
+h1,
+h2 {
+  text-align: center;
+  color: var(--color-primary);
+}
+
+img {
+  max-block-size: 50vh;
+  object-fit: contain;
+  margin-inline: auto;
+}
+
+a {
+  color: var(--color-primary);
+}
