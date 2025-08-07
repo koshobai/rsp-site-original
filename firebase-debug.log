@@ -1,140 +1,91 @@
-[debug] [2025-08-07T08:25:26.861Z] ----------------------------------------------------------------------
-[debug] [2025-08-07T08:25:26.863Z] Command:       /Users/tariq/.nvm/versions/node/v22.17.1/bin/node /Users/tariq/.nvm/versions/node/v22.17.1/bin/firebase init
-[debug] [2025-08-07T08:25:26.863Z] CLI Version:   14.11.1
-[debug] [2025-08-07T08:25:26.863Z] Platform:      darwin
-[debug] [2025-08-07T08:25:26.863Z] Node Version:  v22.17.1
-[debug] [2025-08-07T08:25:26.864Z] Time:          Thu Aug 07 2025 17:25:26 GMT+0900 (Japan Standard Time)
-[debug] [2025-08-07T08:25:26.864Z] ----------------------------------------------------------------------
+[debug] [2025-08-07T08:48:53.845Z] ----------------------------------------------------------------------
+[debug] [2025-08-07T08:48:53.846Z] Command:       /Users/tariq/.nvm/versions/node/v22.17.1/bin/node /Users/tariq/.nvm/versions/node/v22.17.1/bin/firebase serve
+[debug] [2025-08-07T08:48:53.846Z] CLI Version:   14.12.0
+[debug] [2025-08-07T08:48:53.847Z] Platform:      darwin
+[debug] [2025-08-07T08:48:53.847Z] Node Version:  v22.17.1
+[debug] [2025-08-07T08:48:53.847Z] Time:          Thu Aug 07 2025 17:48:53 GMT+0900 (Japan Standard Time)
+[debug] [2025-08-07T08:48:53.847Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2025-08-07T08:25:26.865Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2025-08-07T08:25:26.894Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2025-08-07T08:25:26.894Z] > authorizing via signed-in user (tariq@koshobai.com)
+[debug] [2025-08-07T08:48:53.935Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-07T08:48:53.935Z] > authorizing via signed-in user (tariq@koshobai.com)
+[debug] [2025-08-07T08:48:53.935Z] [iam] checking project newborn-rsp for permissions ["firebase.projects.get"]
+[debug] [2025-08-07T08:48:53.936Z] Checked if tokens are valid: true, expires at: 1754558772959
+[debug] [2025-08-07T08:48:53.936Z] Checked if tokens are valid: true, expires at: 1754558772959
+[debug] [2025-08-07T08:48:53.936Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/newborn-rsp:testIamPermissions [none]
+[debug] [2025-08-07T08:48:53.936Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/newborn-rsp:testIamPermissions x-goog-quota-user=projects/newborn-rsp
+[debug] [2025-08-07T08:48:53.936Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/newborn-rsp:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-08-07T08:48:54.856Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/newborn-rsp:testIamPermissions 200
+[debug] [2025-08-07T08:48:54.857Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/newborn-rsp:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-08-07T08:48:54.857Z] Checked if tokens are valid: true, expires at: 1754558772959
+[debug] [2025-08-07T08:48:54.857Z] Checked if tokens are valid: true, expires at: 1754558772959
+[debug] [2025-08-07T08:48:54.857Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/newborn-rsp/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-08-07T08:48:54.857Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/newborn-rsp/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/newborn-rsp
+[debug] [2025-08-07T08:48:56.191Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/newborn-rsp/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-08-07T08:48:56.192Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/newborn-rsp/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-08-07T08:48:56.206Z] Checked if tokens are valid: true, expires at: 1754558772959
+[debug] [2025-08-07T08:48:56.207Z] Checked if tokens are valid: true, expires at: 1754558772959
+[debug] [2025-08-07T08:48:56.207Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/newborn-rsp [none]
+[debug] [2025-08-07T08:48:56.448Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/newborn-rsp 200
+[debug] [2025-08-07T08:48:56.449Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/newborn-rsp {"projectNumber":"790795153409","projectId":"newborn-rsp","lifecycleState":"ACTIVE","name":"newborn-rsp","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-08-07T08:27:15.141143Z","parent":{"type":"organization","id":"684740801020"}}
 [info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+[info] === Serving from '/Users/tariq/Desktop/rsp-site-original'...
+[info] 
+[debug] [2025-08-07T08:48:56.452Z] Checked if tokens are valid: true, expires at: 1754558772959
+[debug] [2025-08-07T08:48:56.452Z] Checked if tokens are valid: true, expires at: 1754558772959
+[debug] [2025-08-07T08:48:56.452Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/newborn-rsp [none]
+[debug] [2025-08-07T08:48:56.876Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/newborn-rsp 200
+[debug] [2025-08-07T08:48:56.876Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/newborn-rsp {"projectId":"newborn-rsp","projectNumber":"790795153409","displayName":"newborn-rsp","name":"projects/newborn-rsp","resources":{"hostingSite":"newborn-rsp"},"state":"ACTIVE","etag":"1_388ddf61-aea2-460a-ab4e-9a1a6412a477"}
+[info] 
+   Thank you for trying our experimental support for Vite on Firebase Hosting.
+   While this integration is maintained by Googlers it is not a supported Firebase product.
+   Issues filed on GitHub will be addressed on a best-effort basis by maintainers and other community members.
 
-You're about to initialize a Firebase project in this directory:
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/frameworks-overview
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
 
-  /Users/tariq/Desktop/rsp-site-original
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
 
-[debug] [2025-08-07T08:25:27.720Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
-[debug] [2025-08-07T08:25:27.720Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
-[info] 
-=== Project Setup
-[info] 
-[info] First, let's associate this project directory with a Firebase project.
-[info] You can create multiple project aliases by running firebase use --add, 
-[info] but for now we'll just set up a default project.
-[info] 
-[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
-[debug] [2025-08-07T08:26:13.265Z] Checked if tokens are valid: false, expires at: 1753677961237
-[debug] [2025-08-07T08:26:13.265Z] Checked if tokens are valid: false, expires at: 1753677961237
-[debug] [2025-08-07T08:26:13.265Z] > refreshing access token with scopes: []
-[debug] [2025-08-07T08:26:13.266Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
-[debug] [2025-08-07T08:26:13.266Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2025-08-07T08:26:13.959Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
-[debug] [2025-08-07T08:26:13.959Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2025-08-07T08:26:13.972Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
-[debug] [2025-08-07T08:26:13.972Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"rspsite"}
-[debug] [2025-08-07T08:26:14.963Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
-[debug] [2025-08-07T08:26:14.964Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_UNAVAILABLE","suggestedProjectId":"rspsite-de957"}
-[debug] [2025-08-07T08:27:06.132Z] Checked if tokens are valid: true, expires at: 1754558772959
-[debug] [2025-08-07T08:27:06.132Z] Checked if tokens are valid: true, expires at: 1754558772959
-[debug] [2025-08-07T08:27:06.134Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
-[debug] [2025-08-07T08:27:06.134Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"newborn-rsp"}
-[debug] [2025-08-07T08:27:06.476Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
-[debug] [2025-08-07T08:27:06.476Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_AVAILABLE","suggestedProjectId":"newborn-rsp"}
-[debug] [2025-08-07T08:27:13.321Z] Checked if tokens are valid: true, expires at: 1754558772959
-[debug] [2025-08-07T08:27:13.321Z] Checked if tokens are valid: true, expires at: 1754558772959
-[debug] [2025-08-07T08:27:13.321Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
-[debug] [2025-08-07T08:27:13.321Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"newborn-rsp","name":"newborn-rsp"}
-[debug] [2025-08-07T08:27:14.281Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
-[debug] [2025-08-07T08:27:14.281Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.6280045566619154203"}
-[debug] [2025-08-07T08:27:14.282Z] Checked if tokens are valid: true, expires at: 1754558772959
-[debug] [2025-08-07T08:27:14.282Z] Checked if tokens are valid: true, expires at: 1754558772959
-[debug] [2025-08-07T08:27:14.282Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6280045566619154203 [none]
-[debug] [2025-08-07T08:27:15.003Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6280045566619154203 200
-[debug] [2025-08-07T08:27:15.003Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6280045566619154203 {"name":"operations/create_project.global.6280045566619154203"}
-[debug] [2025-08-07T08:27:15.504Z] [Project Creation Poller] Retrying task index 0
-[debug] [2025-08-07T08:27:15.505Z] Checked if tokens are valid: true, expires at: 1754558772959
-[debug] [2025-08-07T08:27:15.505Z] Checked if tokens are valid: true, expires at: 1754558772959
-[debug] [2025-08-07T08:27:15.506Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6280045566619154203 [none]
-[debug] [2025-08-07T08:27:15.702Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6280045566619154203 200
-[debug] [2025-08-07T08:27:15.703Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6280045566619154203 {"name":"operations/create_project.global.6280045566619154203","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"790795153409","projectId":"newborn-rsp","lifecycleState":"ACTIVE","name":"newborn-rsp","createTime":"2025-08-07T08:27:15.141143Z","parent":{"type":"organization","id":"684740801020"}}}
-[debug] [2025-08-07T08:27:15.703Z] Checked if tokens are valid: true, expires at: 1754558772959
-[debug] [2025-08-07T08:27:15.703Z] Checked if tokens are valid: true, expires at: 1754558772959
-[debug] [2025-08-07T08:27:15.703Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/newborn-rsp:addFirebase [none]
-[debug] [2025-08-07T08:27:19.095Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/newborn-rsp:addFirebase 200
-[debug] [2025-08-07T08:27:19.095Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/newborn-rsp:addFirebase {"name":"operations/workflows/MWE0MzM4NWYtMTQ2Yy00NmY3LWJmYzgtZjc5NzUxMDkyZmI1"}
-[debug] [2025-08-07T08:27:19.095Z] Checked if tokens are valid: true, expires at: 1754558772959
-[debug] [2025-08-07T08:27:19.095Z] Checked if tokens are valid: true, expires at: 1754558772959
-[debug] [2025-08-07T08:27:19.095Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MWE0MzM4NWYtMTQ2Yy00NmY3LWJmYzgtZjc5NzUxMDkyZmI1 [none]
-[debug] [2025-08-07T08:27:20.148Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MWE0MzM4NWYtMTQ2Yy00NmY3LWJmYzgtZjc5NzUxMDkyZmI1 200
-[debug] [2025-08-07T08:27:20.148Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MWE0MzM4NWYtMTQ2Yy00NmY3LWJmYzgtZjc5NzUxMDkyZmI1 {"name":"operations/workflows/MWE0MzM4NWYtMTQ2Yy00NmY3LWJmYzgtZjc5NzUxMDkyZmI1"}
-[debug] [2025-08-07T08:27:20.649Z] [Add Firebase Poller] Retrying task index 0
-[debug] [2025-08-07T08:27:20.650Z] Checked if tokens are valid: true, expires at: 1754558772959
-[debug] [2025-08-07T08:27:20.650Z] Checked if tokens are valid: true, expires at: 1754558772959
-[debug] [2025-08-07T08:27:20.650Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MWE0MzM4NWYtMTQ2Yy00NmY3LWJmYzgtZjc5NzUxMDkyZmI1 [none]
-[debug] [2025-08-07T08:27:21.522Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MWE0MzM4NWYtMTQ2Yy00NmY3LWJmYzgtZjc5NzUxMDkyZmI1 200
-[debug] [2025-08-07T08:27:21.522Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MWE0MzM4NWYtMTQ2Yy00NmY3LWJmYzgtZjc5NzUxMDkyZmI1 {"name":"operations/workflows/MWE0MzM4NWYtMTQ2Yy00NmY3LWJmYzgtZjc5NzUxMDkyZmI1"}
-[debug] [2025-08-07T08:27:22.523Z] [Add Firebase Poller] Retrying task index 0
-[debug] [2025-08-07T08:27:22.523Z] Checked if tokens are valid: true, expires at: 1754558772959
-[debug] [2025-08-07T08:27:22.523Z] Checked if tokens are valid: true, expires at: 1754558772959
-[debug] [2025-08-07T08:27:22.523Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MWE0MzM4NWYtMTQ2Yy00NmY3LWJmYzgtZjc5NzUxMDkyZmI1 [none]
-[debug] [2025-08-07T08:27:23.490Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MWE0MzM4NWYtMTQ2Yy00NmY3LWJmYzgtZjc5NzUxMDkyZmI1 200
-[debug] [2025-08-07T08:27:23.490Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MWE0MzM4NWYtMTQ2Yy00NmY3LWJmYzgtZjc5NzUxMDkyZmI1 {"name":"operations/workflows/MWE0MzM4NWYtMTQ2Yy00NmY3LWJmYzgtZjc5NzUxMDkyZmI1"}
-[debug] [2025-08-07T08:27:25.491Z] [Add Firebase Poller] Retrying task index 0
-[debug] [2025-08-07T08:27:25.491Z] Checked if tokens are valid: true, expires at: 1754558772959
-[debug] [2025-08-07T08:27:25.491Z] Checked if tokens are valid: true, expires at: 1754558772959
-[debug] [2025-08-07T08:27:25.492Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MWE0MzM4NWYtMTQ2Yy00NmY3LWJmYzgtZjc5NzUxMDkyZmI1 [none]
-[debug] [2025-08-07T08:27:26.168Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MWE0MzM4NWYtMTQ2Yy00NmY3LWJmYzgtZjc5NzUxMDkyZmI1 200
-[debug] [2025-08-07T08:27:26.169Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MWE0MzM4NWYtMTQ2Yy00NmY3LWJmYzgtZjc5NzUxMDkyZmI1 {"name":"operations/workflows/MWE0MzM4NWYtMTQ2Yy00NmY3LWJmYzgtZjc5NzUxMDkyZmI1"}
-[debug] [2025-08-07T08:27:30.170Z] [Add Firebase Poller] Retrying task index 0
-[debug] [2025-08-07T08:27:30.170Z] Checked if tokens are valid: true, expires at: 1754558772959
-[debug] [2025-08-07T08:27:30.170Z] Checked if tokens are valid: true, expires at: 1754558772959
-[debug] [2025-08-07T08:27:30.171Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MWE0MzM4NWYtMTQ2Yy00NmY3LWJmYzgtZjc5NzUxMDkyZmI1 [none]
-[debug] [2025-08-07T08:27:30.795Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MWE0MzM4NWYtMTQ2Yy00NmY3LWJmYzgtZjc5NzUxMDkyZmI1 200
-[debug] [2025-08-07T08:27:30.795Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MWE0MzM4NWYtMTQ2Yy00NmY3LWJmYzgtZjc5NzUxMDkyZmI1 {"name":"operations/workflows/MWE0MzM4NWYtMTQ2Yy00NmY3LWJmYzgtZjc5NzUxMDkyZmI1","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"newborn-rsp","projectNumber":"790795153409","displayName":"newborn-rsp","name":"projects/newborn-rsp","resources":{"hostingSite":"newborn-rsp"}}}
-[info] 
-[info] 🎉🎉🎉 Your Firebase project is ready! 🎉🎉🎉
-[info] 
-[info] Project information:
-[info]    - Project ID: newborn-rsp
-[info]    - Project Name: newborn-rsp
-[info] 
-[info] Firebase console is available at
-[info] https://console.firebase.google.com/project/newborn-rsp/overview
-[info] i  Using project newborn-rsp (newborn-rsp) 
-[info] 
-=== Hosting Setup
-[debug] [2025-08-07T08:27:30.806Z] Checked if tokens are valid: true, expires at: 1754558772959
-[debug] [2025-08-07T08:27:30.806Z] Checked if tokens are valid: true, expires at: 1754558772959
-[debug] [2025-08-07T08:27:30.806Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/newborn-rsp [none]
-[debug] [2025-08-07T08:27:31.855Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/newborn-rsp 200
-[debug] [2025-08-07T08:27:31.855Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/newborn-rsp {"projectId":"newborn-rsp","projectNumber":"790795153409","displayName":"newborn-rsp","name":"projects/newborn-rsp","resources":{"hostingSite":"newborn-rsp"},"state":"ACTIVE","etag":"1_388ddf61-aea2-460a-ab4e-9a1a6412a477"}
-[debug] [2025-08-07T08:27:32.430Z] Error: Cannot find module 'vite'
-Require stack:
-- /Users/tariq/.nvm/versions/node/v22.17.1/lib/node_modules/firebase-tools/lib/frameworks/utils.js
-- /Users/tariq/.nvm/versions/node/v22.17.1/lib/node_modules/firebase-tools/lib/frameworks/index.js
-- /Users/tariq/.nvm/versions/node/v22.17.1/lib/node_modules/firebase-tools/lib/emulator/controller.js
-- /Users/tariq/.nvm/versions/node/v22.17.1/lib/node_modules/firebase-tools/lib/emulator/commandUtils.js
-- /Users/tariq/.nvm/versions/node/v22.17.1/lib/node_modules/firebase-tools/lib/commands/database-get.js
-- /Users/tariq/.nvm/versions/node/v22.17.1/lib/node_modules/firebase-tools/lib/commands/index.js
-- /Users/tariq/.nvm/versions/node/v22.17.1/lib/node_modules/firebase-tools/lib/index.js
-- /Users/tariq/.nvm/versions/node/v22.17.1/lib/node_modules/firebase-tools/lib/bin/cli.js
-- /Users/tariq/.nvm/versions/node/v22.17.1/lib/node_modules/firebase-tools/lib/bin/firebase.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
-    at Function.resolve (node:internal/modules/helpers:145:19)
-    at relativeRequire (/Users/tariq/.nvm/versions/node/v22.17.1/lib/node_modules/firebase-tools/lib/frameworks/utils.js:203:34)
-    at getConfig (/Users/tariq/.nvm/versions/node/v22.17.1/lib/node_modules/firebase-tools/lib/frameworks/vite/index.js:110:65)
-    at discover (/Users/tariq/.nvm/versions/node/v22.17.1/lib/node_modules/firebase-tools/lib/frameworks/vite/index.js:59:68)
-    at async /Users/tariq/.nvm/versions/node/v22.17.1/lib/node_modules/firebase-tools/lib/frameworks/vite/index.js:37:55
-    at async discover (/Users/tariq/.nvm/versions/node/v22.17.1/lib/node_modules/firebase-tools/lib/frameworks/index.js:47:32)
-    at async Object.doSetup (/Users/tariq/.nvm/versions/node/v22.17.1/lib/node_modules/firebase-tools/lib/init/features/hosting/index.js:54:11)
-    at async init (/Users/tariq/.nvm/versions/node/v22.17.1/lib/node_modules/firebase-tools/lib/init/index.js:62:13)
-    at async Command.initAction [as actionFn] (/Users/tariq/.nvm/versions/node/v22.17.1/lib/node_modules/firebase-tools/lib/commands/init.js:205:5)
-[error] 
-[error] Error: An unexpected error has occurred.
+[debug] [2025-08-07T08:49:03.511Z] [web frameworks] effective firebase.json:  {
+  "hosting": [
+    {
+      "source": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "frameworksBackend": {
+        "region": "asia-east1"
+      },
+      "site": "newborn-rsp",
+      "rewrites": [],
+      "redirects": [],
+      "headers": [],
+      "cleanUrls": true,
+      "public": ".firebase/newborn-rsp/hosting",
+      "webFramework": "vite"
+    }
+  ]
+}
+[debug] [2025-08-07T08:49:03.511Z] Checked if tokens are valid: true, expires at: 1754558772959
+[debug] [2025-08-07T08:49:03.511Z] Checked if tokens are valid: true, expires at: 1754558772959
+[debug] [2025-08-07T08:49:03.511Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/newborn-rsp/sites 
+[debug] [2025-08-07T08:49:04.336Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/newborn-rsp/sites 200
+[debug] [2025-08-07T08:49:04.336Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/newborn-rsp/sites {"sites":[{"name":"projects/newborn-rsp/sites/newborn-rsp","defaultUrl":"https://newborn-rsp.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-08-07T08:49:04.336Z] Checked if tokens are valid: true, expires at: 1754558772959
+[debug] [2025-08-07T08:49:04.336Z] Checked if tokens are valid: true, expires at: 1754558772959
+[debug] [2025-08-07T08:49:04.336Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/newborn-rsp/webApps/-/config [none]
+[debug] [2025-08-07T08:49:05.028Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/newborn-rsp/webApps/-/config 200
+[debug] [2025-08-07T08:49:05.028Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/newborn-rsp/webApps/-/config {"projectId":"newborn-rsp","storageBucket":"newborn-rsp.firebasestorage.app","apiKey":"AIzaSyDjZ-mr8SkTh-vbWScn-LVMbam8MARrkzI","authDomain":"newborn-rsp.firebaseapp.com","messagingSenderId":"790795153409"}
+[info] i  hosting[newborn-rsp]: Serving hosting files from: .firebase/newborn-rsp/hosting {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1m.firebase/newborn-rsp/hosting\u001b[22m"}}
+[info] ✔  hosting[newborn-rsp]: Local server: http://localhost:5003 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5003\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [07/Aug/2025:08:49:39 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [07/Aug/2025:08:49:39 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0\""}}
+[info] i  hosting: ::1 - - [07/Aug/2025:08:49:39 +0000] "GET /@vite/client HTTP/1.1" 200 137392 "http://localhost:5003/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [07/Aug/2025:08:49:39 +0000] \"GET /@vite/client HTTP/1.1\" 200 137392 \"http://localhost:5003/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0\""}}
+[info] i  hosting: ::1 - - [07/Aug/2025:08:49:39 +0000] "GET /favicon.ico HTTP/1.1" 200 1150 "http://localhost:5003/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [07/Aug/2025:08:49:39 +0000] \"GET /favicon.ico HTTP/1.1\" 200 1150 \"http://localhost:5003/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0\""}}
+[info] i  hosting: ::1 - - [07/Aug/2025:08:49:39 +0000] "GET /node_modules/vite/dist/client/env.mjs HTTP/1.1" 200 4549 "http://localhost:5003/@vite/client" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [07/Aug/2025:08:49:39 +0000] \"GET /node_modules/vite/dist/client/env.mjs HTTP/1.1\" 200 4549 \"http://localhost:5003/@vite/client\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0\""}}
+[info] i  hosting: ::1 - - [07/Aug/2025:08:55:20 +0000] "GET /@vite/client HTTP/1.1" 304 - "http://localhost:5003/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [07/Aug/2025:08:55:20 +0000] \"GET /@vite/client HTTP/1.1\" 304 - \"http://localhost:5003/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0\""}}
+[info] i  hosting: ::1 - - [07/Aug/2025:08:55:20 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [07/Aug/2025:08:55:20 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0\""}}
+[info] i  hosting: ::1 - - [07/Aug/2025:08:55:20 +0000] "GET /node_modules/vite/dist/client/env.mjs HTTP/1.1" 304 - "http://localhost:5003/@vite/client" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [07/Aug/2025:08:55:20 +0000] \"GET /node_modules/vite/dist/client/env.mjs HTTP/1.1\" 304 - \"http://localhost:5003/@vite/client\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0\""}}
+[info] i  hosting: ::1 - - [07/Aug/2025:09:08:56 +0000] "GET / HTTP/1.1" - - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [07/Aug/2025:09:08:56 +0000] \"GET / HTTP/1.1\" - - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0\""}}
+[info] i  hosting: ::1 - - [07/Aug/2025:09:08:56 +0000] "GET / HTTP/1.1" - - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [07/Aug/2025:09:08:56 +0000] \"GET / HTTP/1.1\" - - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0\""}}
